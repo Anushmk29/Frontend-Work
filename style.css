@@ -1,0 +1,353 @@
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+font-family: 'Montserrat', sans-serif;
+color: #fff;
+}
+
+html,body{
+height: 100%;
+/* perspective: 800px; */
+width: 100%;
+}
+#cursor{
+    height: 25px;
+    width: 25px;
+    background-color: aqua;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+}
+
+#cursor-blur{
+    height: 400px;
+    width: 400px;
+    background-color: rgba(0, 255, 255, 0.308);
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(40px);
+     z-index: 9; 
+}
+#nav{
+    width: 100%;
+    height: 10%;
+    /* background-color: rgb(0, 0, 0); */
+    display: flex;
+    align-items: center;
+    padding: 0px 150px;
+    gap: 50px;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 99;
+    /* border: 1px solid whitesmoke;
+    border-radius: 5px; */
+}
+
+#nav i{
+    height: 70px;
+    padding: 20px 0px;
+}
+
+#nav img{
+    height: 50px;
+}
+
+#nav h4{
+     text-transform:uppercase ;
+     font-size: 20px;
+     font-weight: 600;
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+    /* padding-top: 5px; */
+}
+
+#main{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.221);
+}
+
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aqua; */
+    z-index: 10;
+}
+
+#page1 h1{
+          font-size: 140px;
+          position: relative;
+          font-weight: 700;
+}
+
+#page1 h2{
+    font-size: 70px;
+    margin-top: 5px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+/* pseudo elements */
+#page1 h1::before{
+    content: "EAT.DRINK.PLAY";
+    position: absolute;
+    color: black;
+    top: -6px;
+    left: -6px;
+    -webkit-text-stroke: 2px rgb(25, 66, 201);
+    z-index: -1;
+}
+
+#page1 p{
+    font-size: 20px;
+    padding: 10px;
+    font-weight: 600;
+    width: 30%;
+   
+}
+#page2{
+    min-height: 100vh;
+    width: 100%;
+    z-index: 10;
+}
+
+
+#scroller{
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    z-index: 10;
+}
+#scroller::-webkit-scrollbar{
+    display: none;
+}
+#scroller-in-1{
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count:infinite ;
+}
+#scroller-in-1{
+    display: inline-block;
+    white-space: nowrap;
+}
+#scroller h4{
+    display: inline-block;
+    font-size: 120px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 1000;
+    margin-right: 30px;
+    transition: all linear 0.5s;
+    color: transparent;
+    -webkit-text-stroke: 2px rgb(34, 244, 247);
+}
+#scroller h4:hover{
+    color: aqua;
+}
+
+@keyframes scroll{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+
+#about-us{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+    z-index: 10;
+}
+
+#about-us img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#about-us-in{
+    width: 50%;
+    /* align-items: center; */
+    text-align: center;
+}
+
+#about-us-in h3{
+    font-size: 60px;
+     font-weight: 800;
+     margin-bottom: 30px;
+
+}
+
+#about-us-in p{
+    font-size: 30px;
+    line-height: 26px;
+     padding: 10px;
+
+}
+
+#cards-container{
+    /* background-color: aqua; */
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 70px;
+    z-index: 10;
+
+}
+
+.card{
+    height: 80%;
+    width: 30%;
+    /* background-color: bisque; */
+    border-radius: 15px;
+        z-index: 9;
+        overflow: hidden;
+        transition: all ease 0.6s;
+
+
+}
+
+#contain-1{
+    position: relative;
+    background-image: url(https://i.pinimg.com/236x/12/86/e8/1286e8e59d412eca38e9980df7a37d58.jpg);
+    background-repeat:no-repeat;
+    background-size:70%;
+    background-size: contain;
+        background-position:center;
+        overflow: hidden;
+
+}
+#contain-2{
+    background-image: url(https://i.pinimg.com/236x/e8/26/e6/e826e613eb6ad7b99420731d88437e3f.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+     background-size: contain;
+        background-position:center;
+
+    
+}
+#contain-3{
+    background-image: url(https://i.pinimg.com/236x/57/a3/3d/57a33d9dedad36166bd3cab3c700518c.jpg);
+    background-repeat: no-repeat;
+    background-size:100%;
+     background-size: contain;
+        background-position:center;
+
+}
+
+.overlay{
+    height: 100%;
+    width: 100%;
+    background-color: aqua;
+    padding: 50px;
+    padding-top: 200px;
+    opacity: 0;
+    transition: all ease 0.6s;
+
+}
+
+.overlay h4{
+    color: black;
+    padding: 15px;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.overlay p{
+    color: black;
+    padding: 10px;
+    font-size: 30px;
+}
+
+.card:hover .overlay{
+    opacity: 1;
+}
+
+.card:hover {
+    transform: rotate3d(2,-2,0,15deg);
+}
+
+#aqua-div{
+       height: 300px;
+       width: 100%;
+       /* background: aqua; */
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       border-radius: 100px;
+       margin: 100px 0px 50px;
+       background-image: url(https://i.pinimg.com/236x/b5/bc/98/b5bc986d9c2e5161ca06dbffafb395b4.jpg);
+       background-position:center;
+       background-repeat: repeat-x;
+       background-size: contain;
+       position: relative;
+       z-index: 10;
+
+    }
+
+#aqua-div h4{
+    font-size: 60px;
+    font-weight: 900;
+   text-transform: uppercase ;
+   color: rgba(57, 235, 255, 0.936);
+   -webkit-text-stroke: 3px black;
+   
+}
+
+#page3{
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#page3>p{
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    padding: 10px;
+    margin: 10px;
+    width: 45%;
+
+}
+
+#page3 img{
+    position: absolute;
+    height: 60px;
+
+}
+
+#page3 #quotation1{
+    left: 20%;
+    top: 30%;
+}
+
+#page3 #quotation2{
+    right: 20%;
+    bottom: 30%;
+}
