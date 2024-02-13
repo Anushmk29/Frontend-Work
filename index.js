@@ -19,14 +19,14 @@ document.addEventListener("mousemove",function(dets) {
 gsap.to("#nav",{
     backgroundColor:"black",
     duration:1,
-    height:"100px",
+    height:"160px",
     // delay:10,
     scrollTrigger:{
         trigger:"#nav",
         scoller:"body",
         // markers:true,
-        start:"top -10%",
-        end:"top -11% ",
+        start:"top -2%",
+        end:"top -4% ",
         scrub:1,
         
     }
@@ -143,10 +143,24 @@ gsap.from("#para",{
     scrollTrigger:{
       trigger:"#para",
       scroller:"body",
-      markers:true,
+      // markers:true,
       start:"top 50%",
       end:"top 40%",
-      scrub:2
+      scrub:4
 
     }
+})
+
+gsap.from("#page4 h1",{
+  y:120,
+  // scale:1.2,
+  scrollTrigger:{
+    trigger:"#page4 h1",
+    scroller:"body",
+    // markers:true,
+    start:"top 75%",
+    end:"top 70%",
+    scrub:5
+
+  }
 })

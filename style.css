@@ -8,13 +8,14 @@ color: #fff;
 
 html,body{
 height: 100%;
-/* perspective: 800px; */
+
 width: 100%;
 }
 #cursor{
     height: 25px;
     width: 25px;
-    background-color: aqua;
+    background-color:rgb(8, 189, 255);
+    border: 1px solid black;
     border-radius: 50%;
     position: fixed;
     z-index: 99;
@@ -23,7 +24,7 @@ width: 100%;
 #cursor-blur{
     height: 400px;
     width: 400px;
-    background-color: rgba(0, 255, 255, 0.308);
+    background-color: rgba(0, 221, 255, 0.248);
     border-radius: 50%;
     position: fixed;
     filter: blur(40px);
@@ -50,7 +51,7 @@ width: 100%;
 }
 
 #nav img{
-    height: 50px;
+    height: 70px;
 }
 
 #nav h4{
@@ -114,6 +115,34 @@ video{
     width: 30%;
    
 }
+
+#page1 #arrow{
+    height: 250px ;
+    width: 250px;
+    background-color: transparent;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: -1%;
+    bottom: 0%;
+    border: 2px solid rgb(47,93,236);
+    border-radius: 50%;
+    transition: all ease 1s;
+
+}
+
+#page1 #arrow:hover{
+    scale:1.5;
+    background-color: rgb(47,93,236);
+    border: none;
+}
+#page1 #arrow i{
+     font-size: 80px;
+     color: whitesmoke;
+     -webkit-text-stroke: 2px rgb(10, 16, 16) ;
+     /* font-weight: 100;/ */
+}
 #page2{
     min-height: 100vh;
     width: 100%;
@@ -122,6 +151,8 @@ video{
 
 
 #scroller{
+    padding: 20px;
+    margin: 20px;
     white-space: nowrap;
     overflow-x: auto;
     overflow-y: hidden;
@@ -151,10 +182,10 @@ video{
     margin-right: 30px;
     transition: all linear 0.5s;
     color: transparent;
-    -webkit-text-stroke: 2px rgb(34, 244, 247);
+    -webkit-text-stroke: 2px rgb(47,93,236);
 }
 #scroller h4:hover{
-    color: aqua;
+    color:rgb(47,93,236);
 }
 
 @keyframes scroll{
@@ -200,13 +231,12 @@ video{
 
 #about-us-in p{
     font-size: 30px;
-    line-height: 26px;
+    line-height: 40px;
      padding: 10px;
 
 }
 
 #cards-container{
-    /* background-color: aqua; */
     height: 60vh;
     display: flex;
     align-items: center;
@@ -219,7 +249,6 @@ video{
 .card{
     height: 80%;
     width: 30%;
-    /* background-color: bisque; */
     border-radius: 15px;
         z-index: 9;
         overflow: hidden;
@@ -259,11 +288,12 @@ video{
 .overlay{
     height: 100%;
     width: 100%;
-    background-color: aqua;
+    background: rgb(47,93,236);
+    background: linear-gradient(90deg, rgba(47,93,236,1) 21%, rgba(0,212,255,1) 62%, rgba(21,21,255,1) 85%);
     padding: 50px;
     padding-top: 200px;
     opacity: 0;
-    transition: all ease 0.6s;
+    transition: all ease 1.2s;
 
 }
 
@@ -283,11 +313,14 @@ video{
 
 .card:hover .overlay{
     opacity: 1;
+    /* transform: rotate3d(-3,-3,0,10deg); */
 }
 
 .card:hover {
-    transform: rotate3d(2,-2,0,15deg);
+    border-radius: 10px;
+    transition: all ease 1.5s;
 }
+
 
 #aqua-div{
        height: 300px;
@@ -298,14 +331,17 @@ video{
        justify-content: center;
        border-radius: 100px;
        margin: 100px 0px 50px;
-       background-image: url(https://i.pinimg.com/236x/b5/bc/98/b5bc986d9c2e5161ca06dbffafb395b4.jpg);
-       background-position:center;
-       background-repeat: repeat-x;
-       background-size: contain;
        position: relative;
+       background: rgb(47,93,236);
+       background: linear-gradient(90deg, rgba(47,93,236,1) 21%, rgba(0,212,255,1) 62%, rgba(21,21,255,1) 85%);
        z-index: 10;
 
     }
+ /* #aqua-div img{
+     mix-blend-mode:multiply;
+     filter: contrast(5);
+    
+    } */
 
 #aqua-div h4{
     font-size: 60px;
@@ -313,8 +349,18 @@ video{
    text-transform: uppercase ;
    color: rgba(57, 235, 255, 0.936);
    -webkit-text-stroke: 3px black;
+   position: relative;
    
 }
+#dot-left{
+    height: 95%;
+    position: absolute;
+    left: 1%;
+    z-index: 1;
+    border-radius: 25px;
+
+}
+
 
 #page3{
     height: 100vh;
@@ -350,4 +396,151 @@ video{
 #page3 #quotation2{
     right: 20%;
     bottom: 30%;
+}
+
+#page4{
+    height: 50vh;
+    width: 100%;
+    /* background-color: rgb(255, 0, 0); */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    position: relative;
+    margin: 70px 0px;
+}
+
+#page4 h1{
+    
+    font-size: 200px;
+    position: absolute;
+    color: rgb(230, 230, 230);
+    top:-10%;
+    font-weight: 600;
+    -webkit-text-stroke: 2px rgb(47,93,236);
+
+}
+
+.elem{
+    height: 70%;
+    width: 20%;
+     /* background-color: black; */
+     padding: 30px;
+    border-radius: 20px;
+     position: relative;
+     
+}
+
+.elem h2{
+    width: 95%;
+    height: 95%;
+    background-color: rgb(47,93,236);
+    color: #0e0d0c;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    /* overflow: hidden; */
+    box-shadow: 15px 15px 0px #d1d1cfd2;
+    position: absolute;
+    border-radius: 20px;
+    z-index: 10;
+    
+  } 
+.elem img{
+    height: 100%;
+    width:  100%;
+  object-fit:cover;
+  border-radius: 20px;
+}
+
+.elem:hover h2{
+      color: rgb(255, 248, 248);
+      background-color: transparent;
+      transition: all ease 1.2s;
+      -webkit-text-stroke: 3px black;
+      box-shadow: none;
+}
+
+.elem:hover img{
+    scale: 1.2;
+    transition: all ease 1s;
+}
+
+#footer{
+    height: 50vh;
+    width: 100%;
+    background: rgb(47,93,236);
+    background: linear-gradient(90deg, rgba(47,93,236,1) 21%, rgba(0,212,255,1) 62%, rgba(21,21,255,1) 85%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    padding: 0 100px;
+    /* margin: 10px; */
+    border-radius: 3%;
+}
+
+#footer>img{
+    position: absolute;
+    left: 1%;
+    height: 90%;
+    z-index: 0;
+    border-radius: 10%;
+}
+
+
+#f2,#f3,#f4{
+    width: 23%;
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+}
+
+#f2 h3{
+    font-size: 3vh;
+    white-space:nowrap ;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 800;
+    line-height: 150px;
+    margin-bottom: 10px;
+
+}
+#f3 h3{
+    font-size: 3vh;
+    white-space:nowrap ;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 800;
+    line-height: 150px;
+    margin-bottom: 10px;
+ 
+}
+#f4 h4 {
+    font-size: 1.9vh;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color:#ffffff;
+    font-weight: 600;
+    line-height: 60px;
+    margin-bottom: 8px;
+
+
+  }
+  
+  body::-webkit-scrollbar-thumb{
+    background-color: #0e0d0c;
+    border-radius: 7%;
+    border: 1px solid white;
+  }
+
+body::-webkit-scrollbar{
+    display: block;
+    width: 15px;
+    background-color:rgb(47,93,236) ;
+    padding: 10px;
+    margin: 10px;
 }
