@@ -106,3 +106,47 @@ gsap.from("#aqua-div",{
 
     }
 })
+
+gsap.from("#quotation1",{
+    y:-100,
+    x:-100,
+    scrollTrigger:{
+      trigger:"#quotation1",
+      scroller:"body",
+    //   markers:true,
+      start:"top 50%",
+      end:"top 40%",
+      scrub:3
+
+    }
+})
+
+gsap.from("#quotation2",{
+    y:100,
+    x:100,
+    delay:2,
+    scrollTrigger:{
+      trigger:"#quotation1",
+      scroller:"body",
+    //   markers:true,
+      start:"bottom 50%",
+      end:"bottom 40%",
+      scrub:4
+
+    }
+})
+
+gsap.from("#para",{
+    scale:0.8,
+    opacity:0,
+    duration:2,
+    scrollTrigger:{
+      trigger:"#para",
+      scroller:"body",
+      markers:true,
+      start:"top 50%",
+      end:"top 40%",
+      scrub:2
+
+    }
+})
