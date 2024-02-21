@@ -230,9 +230,11 @@ video{
 }
 
 #about-us-in p{
-    font-size: 30px;
-    line-height: 40px;
+    font-size: 40px;
+    line-height: 50px;
      padding: 10px;
+     /* font-weight: 600; */
+     font-family: 'Times NeW Roman';
 
 }
 

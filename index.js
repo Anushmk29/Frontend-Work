@@ -62,7 +62,19 @@ h4all.forEach(function(elem){
 
      })
 })
+gsap.from("scroller-in-1",{
+  y:120,
+  // scale:1.2,
+  scrollTrigger:{
+    trigger:"scroller-in-1",
+    scroller:"body",
+    // markers:true,
+    start:"top 75%",
+    end:"top 70%",
+    scrub:5
 
+  }
+})
 gsap.from("#about-us img,#about-us-in",{
     y:50,
     opacity:0,
