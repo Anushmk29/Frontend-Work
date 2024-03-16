@@ -202,6 +202,7 @@ video{
     width: 100%;
     /* background-color: red; */
     padding: 0px 50px;
+    margin: 50px,0px;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -214,6 +215,7 @@ video{
     width: 300px;
     object-fit: cover;
     border-radius: 20px;
+    /* transition: all ease 1s; */
 }
 
 #about-us-in{
@@ -227,7 +229,7 @@ video{
 #about-us-in h3{
     font-size: 40px;
      font-weight: 800;
-     margin-bottom: 20px;
+     margin-bottom: 5px;
 
 }
 
@@ -243,7 +245,7 @@ video{
 #cards-container{
     height: 50vh;
     /* background-color: aqua; */
-    margin: 10vh;
+    margin: 20vh 5vh;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -254,14 +256,13 @@ video{
 
 .card{
     height: 100%;
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 30%;
-    border-radius: 15px;
+    border-radius: 10%;
         z-index: 10;
+
         /* overflow: hidden; */
         transition: all ease 0.6s;
-
-
 }
 
 #contain-1{
@@ -320,13 +321,12 @@ video{
 
 .card:hover .overlay{
     opacity: 1;
-    border-radius: 10px;
+    border-radius: 18%;
     /* transform: rotate3d(-3,-3,0,10deg); */
 }
 
 .card:hover {
-    border-radius: 10px;
-    transition: all ease 1.5s;
+    transition: all ease 1.2s;
 }
 
 
@@ -338,7 +338,7 @@ video{
        align-items: center;
        justify-content: center;
        border-radius: 100px;
-       margin: 70px 0px 50px;
+       margin: 50px 0px 50px;
        position: relative;
        background: rgb(47,93,236);
        background: linear-gradient(90deg, rgba(47,93,236,1) 21%, rgba(0,212,255,1) 62%, rgba(21,21,255,1) 85%);
@@ -423,7 +423,7 @@ video{
     font-size: 100px;
     position: absolute;
     color: rgb(230, 230, 230);
-    top:-10%;
+    top:-19%;
     font-weight: 600;
     -webkit-text-stroke: 2px rgb(47,93,236);
 
@@ -432,7 +432,7 @@ video{
 .elem{
     height: 80%;
     width: 25%;
-     background-color: beige;
+     /* background-color: beige; */
      padding: 10px;
      margin: 30px;
     border-radius: 20px;
@@ -473,7 +473,14 @@ video{
 }
 
 .elem:hover img{
-    scale: 1.2;
+    scale: 1.1;
+    border: 3px solid  rgb(230, 231, 233);
+    transition: all ease 1s;
+}
+
+#elem-3:hover img{
+    scale: 1.1;
+    border: 3px solid rgb(40, 114, 36);
     transition: all ease 1s;
 }
 

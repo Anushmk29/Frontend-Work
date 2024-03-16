@@ -99,8 +99,8 @@ gsap.from(".card",{
         trigger:".card",
         scroller:"body",
         // markers:true,
-        start:"top 60%",
-        end:"top 55%",
+        start:"top 80%",
+        end:"top 75%",
         scrub:2
     } 
 })
@@ -111,10 +111,10 @@ gsap.from("#aqua-div",{
     scrollTrigger:{
       trigger:"#aqua-div",
       scroller:"body",
-    //   markers:true,
+      // markers:true,
       start:"top 40%",
-      end:"bottom 30%",
-      scrub:3
+      end:"bottom 40%",
+      scrub:2
 
     }
 })
@@ -122,13 +122,14 @@ gsap.from("#aqua-div",{
 gsap.from("#quotation1",{
     y:-100,
     x:-100,
+    delay:3,
     scrollTrigger:{
       trigger:"#quotation1",
       scroller:"body",
     //   markers:true,
       start:"top 50%",
       end:"top 40%",
-      scrub:3
+      scrub:5
 
     }
 })
@@ -141,9 +142,9 @@ gsap.from("#quotation2",{
       trigger:"#quotation1",
       scroller:"body",
     //   markers:true,
-      start:"bottom 50%",
-      end:"bottom 40%",
-      scrub:4
+      start:"bottom 70%",
+      end:"bottom 60%",
+      scrub:5
 
     }
 })
@@ -151,7 +152,7 @@ gsap.from("#quotation2",{
 gsap.from("#para",{
     scale:0.8,
     opacity:0,
-    duration:2,
+    duration:2.5,
     scrollTrigger:{
       trigger:"#para",
       scroller:"body",
@@ -164,13 +165,13 @@ gsap.from("#para",{
 })
 
 gsap.from("#page4 h1",{
-  y:120,
+  y:40,
   // scale:1.2,
   scrollTrigger:{
     trigger:"#page4 h1",
     scroller:"body",
     // markers:true,
-    start:"top 75%",
+    start:"top 70%",
     end:"top 70%",
     scrub:5
 
